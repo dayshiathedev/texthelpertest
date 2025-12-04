@@ -26,3 +26,10 @@ replaced_text = text.replace("helper", "assistant")
 print("Text with replacement:", replaced_text)
 
 print("Summary: this text has", length, "characters and", word_count, "words.")
+
+average_chars_per_word = length / word_count
+print("Average characters per word:", average_chars_per_word)
+
+# Rough estimate: divide total words by number of pages
+average_words_per_page = word_count / (full_pages + 1)
+print("Average words per page:", average_words_per_page)
